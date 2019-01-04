@@ -1,0 +1,164 @@
+新边框属性 
+border-image	设置所有边框图像的速记属性。	
+border-radius	一个用于设置所有四个边框- *-半径属性的速记属性	
+box-shadow	附加一个或多个下拉框的阴影
+
+圆角
+四个值: 第一个值为左上角，第二个值为右上角，第三个值为右下角，第四个值为左下角。
+三个值: 第一个值为左上角, 第二个值为右上角和左下角，第三个值为右下角
+两个值: 第一个值为左上角与右下角，第二个值为右上角与左下角
+一个值： 四个圆角值相同
+border-radius	所有四个边角 border-*-*-radius 属性的缩写
+border-top-left-radius	定义了左上角的弧度
+border-top-right-radius	定义了右上角的弧度
+border-bottom-right-radius	定义了右下角的弧度
+border-bottom-left-radius	定义了左下角的弧度
+
+背景图片
+background-clip	规定背景的绘制区域。	  content-box, padding-box, border-box
+background-origin	规定背景图片的定位区域。	 content-box, padding-box, border-box
+background-size	规定背景图片的尺寸。
+多背景图片
+background-image: url(img_flwr.gif), url(paper.gif); 
+background-position: right bottom, left top; 
+background-repeat: no-repeat, repeat; 
+	
+CSS3 渐变（Gradients）
+linear-gradient 线性渐变
+background:linear-gradient(red,blue,yellow,pink,red,gray); 默认从上到下
+background:linear-gradient(to [[top bottom]][left right],yellow 35%,black 35%,pink ); 指定方向 和设定百分比
+background: linear-gradient(70deg,yellow,blue,red,black,pink)  指定角度 deg +-180deg
+background: linear-gradient(to  right,rgba(255,0,0,0),rgba(255,0,0,1)) 指定透明度
+background: repeating-linear-gradient(red 5%,yellow 10%,green 20%)   repeating 重复渐变
+radial-gradient 径向渐变
+background: radial-gradient(red,yellow,blue)  默认从内向外
+background: radial-gradient(red 40%,yellow 10%,white 50%)  设定百分比
+background: radial-gradient(circle,red,yellow,pink)  指定渐变形状 ,默认椭圆ellipse , 圆形 circle 
+background: repeating-radial-gradient(red,yellow 10%,pink 30%)  repeating 重复渐变
+
+CSS3 文本效果
+写 box-shadow 的依次顺序为：
+h-shadow   v-shadow   blur   spread   color   insect
+水平阴影    垂直阴影   模糊    阴影尺寸  颜色   外阴影转到内阴影
+
+hanging-punctuation	规定标点字符是否位于线框之外。	
+punctuation-trim	规定是否对标点字符进行修剪。	
+text-align-last	设置如何对齐最后一行或紧挨着强制换行符之前的行。	
+text-emphasis	向元素的文本应用重点标记以及重点标记的前景色。	
+text-justify	规定当 text-align 设置为 "justify" 时所使用的对齐方法。	
+text-outline	规定文本的轮廓。	
+text-overflow	规定当文本溢出包含元素时发生的事情。	
+text-shadow	向文本添加阴影。	
+text-wrap	规定文本的换行规则。	
+word-break	规定非中日韩文本的换行规则。	
+word-wrap	允许对长的不可分割的单词进行分割并换行到下一行。
+
+CSS3 字体
+font-family	name	必需。规定字体的名称。
+src	URL	必需。定义字体文件的 URL。
+@font-face { font-family: myfont; src: url(sansation_light.woff);}
+@font-face{ font-family: myfont; src:url(sansation_bold.woff); font-weight: bold; }
+
+CSS3 2D 转换
+transform	适用于2D或3D转换的元素	
+transform-origin	允许您更改转化元素位置
+
+matrix(n,n,n,n,n,n)	定义 2D 转换，使用六个值的矩阵。
+translate(x,y)	定义 2D 转换，沿着 X 和 Y 轴移动元素。
+translateX(n)	定义 2D 转换，沿着 X 轴移动元素。
+translateY(n)	定义 2D 转换，沿着 Y 轴移动元素。
+scale(x,y)	定义 2D 缩放转换，改变元素的宽度和高度。
+scaleX(n)	定义 2D 缩放转换，改变元素的宽度。
+scaleY(n)	定义 2D 缩放转换，改变元素的高度。
+rotate(angle)	定义 2D 旋转，在参数中规定角度。
+skew(x-angle,y-angle)	定义 2D 倾斜转换，沿着 X 和 Y 轴。
+skewX(angle)	定义 2D 倾斜转换，沿着 X 轴。
+skewY(angle)	定义 2D 倾斜转换，沿着 Y 轴。
+
+CSS3 3D 转换
+transform	向元素应用 2D 或 3D 转换。	
+transform-origin	允许你改变被转换元素的位置。	
+transform-style	规定被嵌套元素如何在 3D 空间中显示。	
+perspective	规定 3D 元素的透视效果。	
+perspective-origin	规定 3D 元素的底部位置。	
+backface-visibility	定义元素在不面对屏幕时是否可见。	
+3D 转换方法
+函数	描述
+matrix3d(n,n,n,n,n,n,
+n,n,n,n,n,n,n,n,n,n)	定义 3D 转换，使用 16 个值的 4x4 矩阵。
+translate3d(x,y,z)	定义 3D 转化。
+translateX(x)	定义 3D 转化，仅使用用于 X 轴的值。
+translateY(y)	定义 3D 转化，仅使用用于 Y 轴的值。
+translateZ(z)	定义 3D 转化，仅使用用于 Z 轴的值。
+scale3d(x,y,z)	定义 3D 缩放转换。
+scaleX(x)	定义 3D 缩放转换，通过给定一个 X 轴的值。
+scaleY(y)	定义 3D 缩放转换，通过给定一个 Y 轴的值。
+scaleZ(z)	定义 3D 缩放转换，通过给定一个 Z 轴的值。
+rotate3d(x,y,z,angle)	定义 3D 旋转。
+rotateX(angle)	定义沿 X 轴的 3D 旋转。
+rotateY(angle)	定义沿 Y 轴的 3D 旋转。
+rotateZ(angle)	定义沿 Z 轴的 3D 旋转。
+perspective(n)	定义 3D 转换元素的透视视图。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
