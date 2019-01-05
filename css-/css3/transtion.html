@@ -3,19 +3,41 @@
 <head>
 	<title></title>
 	<style type="text/css">
-	div{
+	#div1,#div2{
 		margin: 10px;
 		width: 100px;
 		height: 70px;
 		background: linear-gradient(pink,red,yellow,blue);
-		transition: width 3s;
+		transition: width 3s ,height 3s,transform 3s linear 3s;
 	}
-	#div1:hover{
-		width: 200px;
+	#div1:hover,#div2:hover{
+		width: 200px; 
+		height: 200px;
+		transform:  rotate(720deg);
+	}
+	#div2{
+		position: absolute;
+		top: 0;
+		left: 220px;
+	}
+	#div3{
+		margin:10px;
+		width: 100px;
+		height: 70px;
+		border-radius: 15px;
+		/*background: linear-gradient(to right ,red,orange,yellow,green,blue);*/
+		background-color: #f00;
+		transition:  all 3s ;
+	}
+	#div3:hover{
+		background-color: #00f;
+		transform:  translate(500px,500px) skew(30deg) scale(0.8) rotate(360deg);
 	}
 </style>
 </head>
 <body>
 <div id=div1></div>
+<div id=div2 ></div>
+<div id=div3></div>
 </body>
 </html>

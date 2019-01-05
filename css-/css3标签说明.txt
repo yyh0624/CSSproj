@@ -100,16 +100,62 @@ rotateY(angle)	定义沿 Y 轴的 3D 旋转。
 rotateZ(angle)	定义沿 Z 轴的 3D 旋转。
 perspective(n)	定义 3D 转换元素的透视视图。
 
+CSS3 过渡
+过渡属性
+下表列出了所有的过渡属性:
+属性	描述	CSS
+transition	简写属性，用于在一个属性中设置四个过渡属性。	3
+transition-property	规定应用过渡的 CSS 属性的名称。	3
+transition-duration	定义过渡效果花费的时间。默认是 0。	3
+transition-timing-function	规定过渡效果的时间曲线。默认是 "ease"。	3
+transition-delay	规定过渡效果何时开始。默认是 0。	3
+#div3{
+		margin:10px;
+		width: 100px;
+		height: 70px;
+		border-radius: 15px;
+		/*background: linear-gradient(to right ,red,orange,yellow,green,blue);*/
+		background-color: #f00;
+		transition:  all 3s ;
+	}
+	#div3:hover{
+		background-color: #00f;
+		transform:  translate(500px,500px) skew(30deg) scale(0.8) rotate(360deg);
+	}
 
 
+CSS3 动画
 
+CSS3的动画属性
+下面的表格列出了 @keyframes 规则和所有动画属性：
+属性	描述	CSS
+@keyframes	规定动画。	3
+animation	所有动画属性的简写属性，除了 animation-play-state 属性。	3
+animation-name	规定 @keyframes 动画的名称。	3
+animation-duration	规定动画完成一个周期所花费的秒或毫秒。默认是 0。	3
+animation-timing-function	规定动画的速度曲线。默认是 "ease"。	3
+animation-fill-mode	规定当动画不播放时（当动画完成时，或当动画有一个延迟未开始播放时），要应用到元素的样式。	3
+animation-delay	规定动画何时开始。默认是 0。	3
+animation-iteration-count	规定动画被播放的次数。默认是 1。	3
+animation-direction	规定动画是否在下一周期逆向地播放。默认是 "normal"。	3
+animation-play-state	规定动画是否正在运行或暂停。默认是 "running"。	3
 
+animation: myfirst 5s linear 2s infinite alternate;  简写顺序
 
+ 动画名称>完成时间>速度曲线>动画开始时间>播放次数>下一周期是否逆向
+ name>  duration> function> delay> count>direction
 
-
-
-
-
+CSS3 多列
+column-count	指定元素应该被分割的列数。
+column-fill	指定如何填充列
+column-gap	指定列与列之间的间隙
+column-rule	所有 column-rule-* 属性的简写
+column-rule-color	指定两列间边框的颜色
+column-rule-style	指定两列间边框的样式
+column-rule-width	指定两列间边框的厚度
+column-span	指定元素要跨越多少列
+column-width	指定列的宽度
+columns	设置 column-width 和 column-count 的简写
 
 
 

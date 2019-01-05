@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		p{
+			display: block;
+			margin: 4px;
+			width: 200px;
+			height: 30px;
+		}
+
+	
+		a[href^="http"]{
+			background: 		linear-gradient(red,pink);
+			text-shadow: 2px 2px 2px gray;
+		}
+		a[href$=".pdf"]{
+			text-shadow: none;
+			background:red; 
+		}
+a[href$=".ppt"]{
+			text-shadow: none;
+			background:orange; 
+		}
+		a[href$=".xls"]{
+			text-shadow: none;
+			background:yellow; 
+		}
+		a[href$=".rar"]{
+			text-shadow: none;
+			background:green; 
+		}
+		div:not(#red,#blue){
+			width: 500px;
+			height: 400px;
+			background: url(../images/bj.png) no-repeat;
+			border-radius: 10px 30px;
+		}
+
+#login{
+	width: 400px;
+	padding: 1em 2em 0 2em;
+	font-size: 12px;
+}
+label{
+	line-height: 26px;
+	display: block;
+	font-weight: bold;
+}
+#name,#pwd{
+	border: 1px solid #ccc;
+	width: 160px;
+	height: 22px;
+	padding-left: 20px;
+	margin:  6px 0;
+	line-height: 20px;
+}
+#login input:enabled{
+	background: #fac ;
+	border: 1px solid #fff;
+}
+
+#login input:disabled{
+	background: #ddd ;
+	border: 1px solid #fff;
+}
+div:target{
+	background: red;
+	height: 200px;
+}
+	</style>
+}
+</head>
+<body>
+	<div id=red>红色盒子</div>
+	<div id=blue>蓝色盒子</div>
+	<fieldset id=login>
+		<legend>用户登录</legend>
+		<form action="" id="" class="form" method="post">
+			<label for="name">姓名</label>
+			<input type="text" id="name" name="name" value="" placeholder="name" disabled="" >
+			<label for="pwd">密码</label>
+			<input type="password" name="" id="pwd" value="" disabled="">
+		</form>
+	</fieldset>
+
+	<div> 1111111111111111111</div>
+<p><a href="http://www.pdf">pdf文件</a></p>
+<p><a href="http://www.ppt">ppt文件</a></p>
+<p><a href="http://www.xls">xls文件</a></p>
+<p><a href="http://www.rar">rar文件</a></p>
+<p><a href="http://www.gif">gif文件</a></p>
+<p><a href="http://www.jpg">jpg文件</a></p>
+<p><a href="http://www.png">png文件</a></p>
+<p><a href="http://www.txt">txt文件</a></p>
+<p><a href="http://www./#chaoo">锚点连接</a></p>
+<p><a href="http://www.com">www.com</a></p>
+
+</body>
+</html>
