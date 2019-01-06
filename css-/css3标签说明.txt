@@ -157,7 +157,14 @@ column-span	指定元素要跨越多少列
 column-width	指定列的宽度
 columns	设置 column-width 和 column-count 的简写
 
-
+CSS3 用户界面
+新的用户界面特性
+属性	说明	CSS
+appearance	允许您使一个元素的外观像一个标准的用户界面元素	3
+box-sizing	允许你以适应区域而用某种方式定义某些元素	3
+icon	为创作者提供了将元素设置为图标等价物的能力。	3
+outline-offset	外轮廓修饰并绘制超出边框的边缘	3
+resize	指定一个元素是否是由用户调整大小
 
 
 

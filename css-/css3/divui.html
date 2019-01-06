@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		#div1{
+			border: 2px solid red;
+			padding:20px;
+			width: 300px;
+			resize: both;
+			overflow: auto;
+			outline: 2px solid blue;
+			outline-offset: 10px;
+
+		}
+		p{
+			border:  2px solid red;
+			padding: 20px;
+			resize:  both;
+			overflow: auto;
+		}
+		.container{
+			width:30em;
+			border: 1em solid  red; 
+		}
+		.box{
+			box-sizing: border-box;
+			width: 50%;
+			border: 1em solid green;
+			float: left;
+		}
+	</style>
+</head>
+<body>
+	<div id=div1>
+		调整属性指定一个元素是否由用户可调整大小的。
+	</div>
+	<p>
+		调整属性指定一个元素是否由用户可调整大小的。
+	</p> 
+	<div class="container">
+		<div class="box">这个 div 占据了左边的一半。</div>
+		<div class="box">这个 div 占据了右边的一半。</div>
+	</div>
+</body>
+</html>
