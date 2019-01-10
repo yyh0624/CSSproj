@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		.loader{
+			border: 16px solid #f3f3f3;
+			border-radius: 50%;
+			border-top: 16px solid #3498db;
+			width: 120px;
+			height: 120px;
+			animation: load1 2s linear infinite
+		}
+		@keyframes load1{
+			0%{ transform: rotate(0deg); }
+			100%{transform: rotate(360deg);}
+		}
+
+		.loader2{
+			border-bottom: 16px solid red;
+		}
+		.loader3{
+			border-bottom: 16px solid red;
+				border-left: 16px solid green;
+		}
+		.loader4{
+			border-bottom: 16px solid red;
+			border-left: 16px solid green;
+			border-right: 16px solid yellow;
+		}
+	</style>
+</head>
+<body>
+	<div class="loader"></div>
+	<div class="loader loader2"></div>
+<div class="loader loader3"></div>
+<div class="loader loader4"></div>
+</body>
+</html>

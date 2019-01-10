@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		
+#div1.serif {
+font-family:"Times New Roman",Times,serif;
+}
+		
+#div1.sansserif {
+font-family:Arial,Helvetica,sans-serif;
+}
+#div2>p:nth-child(1){font-size: 260%}
+#div2>p:nth-child(2){font-size: 30px}
+#div2>p:nth-child(3){font-size: 1.175em}
+#div3>p:nth-child(1){font-style: normal;}
+#div3>p:nth-child(2){font-style: italic;}
+#div3>p:nth-child(3){font-style: oblique;}
+	</style>
+ 
+</head>
+<body>
+	<div id="div3">	
+<p class="normal">这是一个段落,正常。</p>
+<p class="italic">这是一个段落,斜体。</p>
+<p class="oblique">这是一个段落,斜体。</p>
+	</div>
+	<div id="div2">
+		<p>This is heading 1</p>
+		<p>This is heading 1</p>
+		<p>This is heading 1</p>
+	</div>
+	<div id="div1">
+		<p class="serif">这一段的字体是 Times New Roman </p>
+<p class="sansserif">这一段的字体是 Arial.</p>
+	</div>
+	
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	*{box-sizing: border-box;}
+	body{margin: 0}
+	.topmenu {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		background: #777;
+	}
+	.topmenu li{ float: left; }
+	.topmenu li a {
+		color: white;
+		padding: 16px;
+		text-align: center;
+		display: inline-block;
+		text-decoration: none;
+	}
+	.topmenu li:last-of-type{ float: right; } 
+	.topmenu li a:hover {background: #222}
+	 .topmenu li a.active{ color: white;background: #4caf50 }
+	.clearfix::after{
+		content: "";
+		clear: both;
+		display: table;
+	}
+	.column{float: left; padding: 15px;}
+	.sidemenu{width: 25%}
+	.content{width: 75%}
+	.header{
+		background: #2196f3;
+		padding: 15px;
+		color: white;
+		text-align: center;
+	}
+	.sidemenu ul{
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	.sidemenu li a{
+		margin-bottom: 4px;
+		display: block;
+		padding: 8px;
+		background: #eee;
+		text-decoration: none;
+		color: #666; 
+	}
+	.sidemenu li a:hover{
+		background: #555;color: white;
+	}
+	.sidemenu li a.active{
+		background: #008cba;color: white;
+	}
+	.footer{
+		padding: 15px;
+		background: #444;
+		color: white;
+		animation: foot 2s linear 0s infinite alternate
+	}
+	.footer img{
+		position: relative;
+		animation: imgs 5s linear 0s infinite alternate
+	}
+	@keyframes foot{
+		0% {background: red}
+		10%{background: orange}
+		20%{background: yellow}
+		30%{background: green}
+		40%{background: blue}
+		50%{background: #D5294BFF}
+		60%{background: #31CF2FFF}
+		70%{background: #712AD4FF}
+		80%{background: #18E698FF}
+		90%{background: #E16C1DFF}
+		100%{background: #CD31C1FF}
+	}
+	@keyframes imgs{
+		 from{left: 0;}
+ 		 to{left: 95%}
+	}
+
+	</style>
+ 
+</head>
+<body>
+	<ul class="topmenu">
+		  <li><a href="#home" class="active">主页</a></li>
+		  <li><a href="#news">新闻</a></li>
+		  <li><a href="#contact">联系我们</a></li>
+		  <li><a href="#about">关于我们</a></li>
+	</ul>
+
+	<div class="clearfix">
+		<div class="column sidemenu">
+			<ul>
+				  <li><a href="#flight">The Flight</a></li>
+			      <li><a href="#city" class="active">The City</a></li>
+			      <li><a href="#island">The Island</a></li>
+			      <li><a href="#food">The Food</a></li>
+			      <li><a href="#people">The People</a></li>
+			      <li><a href="#history">The History</a></li>
+			      <li><a href="#oceans">The Oceans</a></li>
+			</ul>
+		</div>
+	
+	<div class="column content">
+		<div class="header">
+			<h1>The City</h1>
+		</div>
+		<h1>Chania</h1>
+		 <p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.</p>
+	    <p>You will learn more about responsive web pages in a later chapter.</p>
+	</div>
+	</div>
+	<div class="footer">
+		<img src="images/smiley.png" alt="smiley" >
+	</div>
+ 
+</body>
+</html>
