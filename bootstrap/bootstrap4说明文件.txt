@@ -1,0 +1,51 @@
+各色说明
+2、[badge、bg、btn、-primary">主要 
+   [badge、bg、btn、-secondary">次要 
+   [badge、bg、btn、-success">成功 
+   [badge、bg、btn、-danger">危险 
+   [badge、bg、btn、-warning">警告 
+   [badge、bg、btn、-info">信息 
+   [badge、bg、btn、-light">浅色 
+  [badge、bg、btn、-dark">深色 
+
+
+Badge  徽章
+1、h[1-6] >badge  
+2、 各色说明
+3、badge-pill  药丸徽章
+4、button>span.badge.badge-light  内嵌徽章
+
+Button  按钮
+
+1、btn基本样式 +btn+ 各色说明
+2、btn+ btn-outline +各色说明
+3、btn-link 链接按钮 、btn-lg 大按钮、 btn-sm 小按钮、btn-block 块按钮
+
+Button-Group  按钮组
+1、btn-group基本、btn-group-lg 大按钮组、btn-group-sm 小按钮组、 btn-group-vertical 垂直按钮组
+
+Card  卡片
+1、 card 基本 、card-header头部、 card-body内容 、card-footer底部
+2、card 基本 +bg+各色说明
+3、card-link 链接 , card-text 内容 , card-title 标题,
+4、card-img-top 上部图片, card-img-bottom 下部图片, card-img-overlay 文字覆盖图片
+5、
+6、
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

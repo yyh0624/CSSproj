@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="../../link/dist/css/bootstrap.min.css"> 
+	<script type="text/javascript" src="../../link/dist/js/jquery.min.js" ></script>
+	<script type="text/javascript" src="../../link/dist/js/bootstrap.min.js" ></script>
+ 
+   <style type="text/css">
+   	.div1{
+   		background-color: #dedef8;
+   		box-shadow:  inset 1px -1px 1px #444,inset -1px 1px 1px #444;
+   	}
+   </style>
+</head>
+<body>
+<div class="container">
+	<h1>Hello World!</h1>
+  <p>创建三个相等宽度的列! 尝试在 class="row" 的 div 中添加新的 class="col"  div，会显示四个等宽的列。</p>
+	<div class="row">
+		<div class="col div1">.col</div>
+        <div class="col div1">.col</div>
+	    <div class="col div1">.col</div>
+	</div>
+</div>
+<div class="container-fluid">
+	<h1></h1>
+ <div class="row">
+    <div class="col-sm-3" style="background-color:lavender;">.col-sm-3</div>
+    <div class="col-sm-3" style="background-color:lavenderblush;">.col-sm-3</div>
+    <div class="col-sm-3" style="background-color:lavender;">.col-sm-3</div>
+    <div class="col-sm-3" style="background-color:lavenderblush;">.col-sm-3</div>
+  </div>
+</div>
+
+<div class="container-fluid">
+		<h1></h1>
+  <div class="row">
+    <div class="col-lg-4" style="background-color:lavender;">.col-sm-4</div>
+    <div class="col-lg-8" style="background-color:lavenderblush;">.col-sm-8</div>
+  </div>
+</div>
+
+<div class="container-fluid">
+	<h1>偏移</h1>
+	<div class="row">
+		<div class="col-md-4 bg-success">.col-md-4</div>
+		<div class="col-md-4 offset-md-4 bg-warning">col-md-4 offset-md-4</div>
+	</div>
+	<div class="row">
+		<div class="col-md-3 offset-md-3 bg-success">col-md-3 offset-md-3</div>
+		<div class="col-md-3 offset-md-3 bg-warning">col-md-3 offset-md-3</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6 offset-md-3 bg-success">col-md-6 offset-md-3</div>
+	</div>
+</div>
+ 
+</body>
+</html>
