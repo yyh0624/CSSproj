@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+			 <meta name="viewport" content="width=device-width, initial-scale=1">
+ 		 <link rel="stylesheet" type="text/css" href="../link/dist/css/bootstrap.min.css"> 
+	<script type="text/javascript" src="../link/dist/js/jquery.min.js" ></script>
+	  <script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
+	<script type="text/javascript" src="../link/dist/js/bootstrap.min.js" ></script>  
+
+   
+	<style type="text/css">	
+	body{
+			background: linear-gradient(to right , lavender,lavenderblush);
+	}</style>
+</head>
+<body  style="height:1500px">
+	<h2>横向导航 navbar-expand-sm</h2>
+	<nav class="navbar navbar-expand-sm bg-light">
+		<ul class="navbar-nav">
+			<li class="nav-item"><a href="#div1" class="nav-link active" data-toggle="pill">link 1</a></li>
+			<li class="nav-item"><a href="#div2" class="nav-link" data-toggle="pill">link 2</a></li>
+			<li class="nav-item"><a href="#div3" class="nav-link" data-toggle="pill">link 3</a></li>
+			<li class="nav-item"><a href="#div4" class="nav-link" data-toggle="pill">link 4</a></li>
+		</ul>
+	</nav>
+	 <div class="container-fluid">
+		  <h3>简单的导航栏实例</h3>
+		  <p>导航栏一般放在页面的顶部。</p>
+		  <p>我们可以使用 .navbar 类来创建一个标准的导航栏，后面紧跟: .navbar-expand-xl|lg|md|sm 类来创建响应式的导航栏 (大屏幕水平铺开，小屏幕垂直堆叠)。</p>
+	</div>
+
+<h2>垂直导航</h2>
+	<nav class="navbar bg-light">
+		<ul class="navbar-nav">
+			<li class="nav-item"><a href="" class="nav-link">link 1</a></li>
+			<li class="nav-item"><a href="" class="nav-link">link 2</a></li>
+			<li class="nav-item"><a href="" class="nav-link">link 3</a></li>
+			<li class="nav-item"><a href="" class="nav-link">link 4</a></li>
+			<li class="nav-item"><a href="" class="nav-link">link 5</a></li>
+		</ul>
+	</nav>
+	<h2>不同颜色导航</h2>
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <ul class="navbar-nav">
+    <li class="nav-item active">
+      <a class="nav-link" href="#">Active</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" href="#">Disabled</a>
+    </li>
+  </ul>
+</nav>
+<nav class="navbar navbar-expand-sm bg-success navbar-dark">
+  <ul class="navbar-nav">
+    <li class="nav-item active">
+      <a class="nav-link" href="#">Active</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" href="#">Disabled</a>
+    </li>
+  </ul>
+</nav>
+
+<nav class="navbar navbar-expand-sm bg-info navbar-dark">
+  <ul class="navbar-nav">
+    <li class="nav-item active">
+      <a class="nav-link" href="#">Active</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" href="#">Disabled</a>
+    </li>
+  </ul>
+</nav>
+
+	<h2>Logo  .navbar-brand</h2>
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <!-- Brand/logo -->
+  <!-- <a class="navbar-brand" href="#">Logo</a> -->
+
+  <a class="navbar-brand" href="#">
+    <img src="http://static.runoob.com/images/mix/bird.jpg" alt="logo" style="width:40px;">
+  </a>
+  
+  <!-- Links -->
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link 1</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link 2</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link 3</a>
+    </li>
+  </ul>
+</nav>
+
+<div class="container-fluid">
+  <h3>品牌/Logo</h3>
+  <p>.navbar-brand 类用于高亮显示品牌/Logo:</p>
+</div>
+
+
+	<h2>折叠导航</h2>
+	<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+		<a href="#" class="navbar-brand">Navbar</a>
+		<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#collapsibleNavbar">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="collapsibleNavbar">
+			<ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>    
+    </ul>
+		</div>
+	</nav>
+	<h2>导航下拉菜单</h2>
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+		<a href="#" class="navbar-brand">Navbar</a>
+		<ul class="navbar-nav">
+			<li class="nav-item"><a href="" class="nav-link">Link 1</a></li>
+			<li class="nav-item"><a href="" class="nav-link">Link 2</a></li>
+			<li class="nav-item"><a href="" class="nav-link">Link 3</a></li>
+			<li class="nav-item dropdown">
+				<a href="" class="nav-link dropdown-toggle" data-toggle="dropdown">Dropdown link</a>
+				<div class="dropdown-menu">
+					<a href="" class="dropdown-item">Link 1</a>
+					<a href="" class="dropdown-item">Link 2</a>
+					<a href="" class="dropdown-item">Link 3</a>
+					<a href="" class="dropdown-item">Link 4</a>
+					<a href="" class="dropdown-item">Link 5</a>
+				</div>
+			</li>
+		</ul> 
+	</nav>
+	<h2>导航表单  navbar-text  导航文本</h2>
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+		<form action="" class="form-inline">
+			<input type="text" class="form-control" placeholder="Search">
+			<button class="btn btn-success" type="butotn">Search</button>
+		</form>
+		  <!-- Navbar text-->
+  <span class="navbar-text">
+    Navbar text
+  </span>
+	</nav>
+
+
+	<h2>顶部固定导航</h2>
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+		 <a class="navbar-brand" href="#">Logo</a>
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="javascript:void(0)">Link</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="javascript:void(0)">Link</a>
+    </li>
+  </ul>
+	</nav>
+
+		<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-bottom">
+		 <a class="navbar-brand" href="#">Logo</a>
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="javascript:void(0)">Link</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="javascript:void(0)">Link</a>
+    </li>
+  </ul>
+	</nav>
+</body>
+</html>
