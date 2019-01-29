@@ -5,6 +5,7 @@
 	<title>Document</title>
 		 <link rel="stylesheet" type="text/css" href="../link/dist/css/bootstrap.min.css"> 
 	<script type="text/javascript" src="../link/dist/js/jquery.min.js" ></script>
+		  <script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
 	<script type="text/javascript" src="../link/dist/js/bootstrap.min.js" ></script>
 	<style type="text/css">	
 	body{
@@ -44,10 +45,16 @@
 				<button class="btn btn-warning" type="button">
 					Message <span class="badge badge-danger">4</span>
 				</button>
-				<button type="button" class="btn btn-success">
+				<button type="button" class="btn btn-success dropdown-toggle" data-toggle=dropdown>
 					Notifications <span class="badge badge-light badge-pill">99</span>
 				</button>
-
+				<div class="dropdown-menu">
+					<a href="" class="dropdown-item">1</a>
+					<a href="" class="dropdown-item">2</a>
+					<a href="" class="dropdown-item">3</a>
+					<a href="" class="dropdown-item">4</a>
+				</div>
+				
 
 	</div>
 	

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+ 		 <link rel="stylesheet" type="text/css" href="../link/dist/css/bootstrap.min.css"> 
+	<script type="text/javascript" src="../link/dist/js/jquery.min.js" ></script>
+	  <script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
+	<script type="text/javascript" src="../link/dist/js/bootstrap.min.js" ></script>  
+
+   
+	<style type="text/css">	
+	body{
+		/*	background: linear-gradient(to right , lavender,lavenderblush);
+			position: relative;*/
+	}
+	.border{
+		display: inline-block;
+		width: 70px;
+		height: 70px;
+		margin: 6px; 
+	}
+
+	.rou{
+		display: inline-block;
+		width: 70px;
+		height: 70px;
+		margin: 6px;
+		background-color: #555;
+
+	}
+</style>
+</head>
+<body>
+	<div class="container">
+		<h3>边框</h3>
+		  <span class="border"></span>
+		  <span class="border border-0"></span>
+		  <span class="border border-top-0"></span>
+		  <span class="border border-right-0"></span>
+		  <span class="border border-bottom-0"></span>
+		  <span class="border border-left-0"></span>
+
+		  <h3>边框颜色</h3>
+		  <span class="border border-primary"></span>
+		  <span class="border border-secondary"></span>
+		  <span class="border border-success"></span>
+		  <span class="border border-danger"></span>
+		  <span class="border border-warning"></span>
+		  <span class="border border-info"></span>
+		  <span class="border border-dark"></span>
+		  <span class="border border-light"></span>
+		  <span class="border border-white"></span> 
+
+		  <h3>边框圆角</h3>
+		  <span class="rou rounded"></span>
+		  <span class="rou rounded-top"></span>
+		  <span class="rou rounded-right"></span>
+		  <span class="rou rounded-bottom"></span>
+		  <span class="rou rounded-left"></span>
+		  <span class="rou rounded-circle"></span>
+		  <span class="rou rounded-0"></span> 
+		  <h3>浮动</h3>
+		  <div class="clearfix">
+		  	<span class="float-left"><kbd>left</kbd></span>
+		  	<span class="float-right"><kbd>right</kbd></span>
+		  </div>
+		  <h3>水平居中</h3>
+		  <div class="mx-auto bg-warning" style="height: 100px; width: 200px ">center</div>
+
+		  <h3>宽度</h3>
+		  <div class="w-25 bg-warning">宽度 25%</div>
+		  <div class="w-50 bg-warning">宽度 50%</div>
+		  <div class="w-75 bg-warning">宽度 75%</div>
+		  <div class="w-100 bg-warning">宽度 100%</div>
+		  <div class="mw-100 bg-warning">最大宽度 100%</div>
+
+		  <h3>高度</h3>
+		  <div style="height: 1200px;background-color: #ddd ; " >
+		  	<div class="h-25 d-inline-block p-2 bg-warning">高度 25%</div>
+		  	<div class="h-50 d-inline-block p-2 bg-warning">高度 50%</div>
+		  	<div class="h-75 d-inline-block p-2 bg-warning">高度 75%</div>
+		  	<div class="h-100 d-inline-block p-2 bg-warning">高度 100%</div>
+		  	<div class="mh-100 d-inline-block p-2 bg-warning"  style="height:500px">最大高度 100%</div>
+		  </div>
+	</div>
+</body>
+</html>

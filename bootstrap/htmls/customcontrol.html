@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+ 		 <link rel="stylesheet" type="text/css" href="../link/dist/css/bootstrap.min.css"> 
+	<script type="text/javascript" src="../link/dist/js/jquery.min.js" ></script>
+	  <script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
+	<script type="text/javascript" src="../link/dist/js/bootstrap.min.js" ></script>  
+
+   
+	<style type="text/css">	
+	body{
+			background: linear-gradient(to right , lavender,lavenderblush);
+	}</style>
+
+</head>
+<body>
+	<div class="container"> 
+		<div class="custom-control custom-checkbox mb-3">
+			<input type="checkbox" class="custom-control-input" id="customCheck" >
+			<label for="customCheck" class="custom-control-label">
+				自定义复选框
+			</label>
+		</div>
+		<div class="custom-control custom-radio mb-3 custom-control-inline">
+			<input type="radio" class="custom-control-input" id="customRadio" name=cRadio>
+			<label for="customRadio" class="custom-control-label">自定义单选框</label>
+
+		</div>
+		<div class="custom-control custom-radio mb-3 custom-control-inline">
+			<input type="radio" class="custom-control-input" id="customRadio2" name=cRadio>
+			<label for="customRadio2" class="custom-control-label">自定义单选框2</label>
+			
+		</div>
+		 <br>
+		   <select name="cars" class="custom-select-sm">
+      <option selected>比较小的自定义选择菜单</option>
+      <option value="Google">Google</option>
+      <option value="Runoob">Runoob</option>
+      <option value="Taobao">Taobao</option>
+    </select>
+		 <select name="cars" class="custom-select-lg">
+	      <option selected>比较大的自定义选择菜单</option>
+	      <option value="Google">Google</option>
+	      <option value="Runoob">Runoob</option>
+	      <option value="Taobao">Taobao</option>
+    	</select>
+    	<br>
+		 <label for="customRange">自定义滑块</label>
+		 <input type="range" class="custom-range" id="customRange">
+		<h2>自定义上传控件</h2>
+		<div class="custom-file mb-3">
+			<input type="file" class="custom-file-input" id="customFile">
+			<label class="custom-file-label" for="customFile">选择文件</label>
+		</div>
+	</div>
+</body>
+</html>
